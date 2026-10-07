@@ -1,0 +1,3 @@
+# ~/.config/git/ignore -- global gitignore
+**/.claude/settings.local.json
+.DS_Store

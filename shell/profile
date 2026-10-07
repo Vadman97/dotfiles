@@ -1,0 +1,12 @@
+# ~/.profile -- shared by bash/sh login shells.
+# fish is the primary shell; this exists so non-fish shells are usable.
+
+export PATH="$PATH:$HOME/.rvm/bin"
+[ -s "$HOME/.rvm/scripts/rvm" ] && . "$HOME/.rvm/scripts/rvm"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+export PATH="$HOME/.local/bin:$PATH"
+
+[ -s "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

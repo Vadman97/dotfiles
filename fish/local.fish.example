@@ -1,0 +1,35 @@
+# Copy to ~/.config/fish/local.fish and fill in. Never commit the real file.
+#
+#   cp ~/.dotfiles/fish/local.fish.example ~/.config/fish/local.fish
+#   chmod 600 ~/.config/fish/local.fish
+
+# -------------------------------------------------------------- general --
+# set -gx AWS_PROFILE my-profile
+# set -gx PYPI_USERNAME __token__
+# set -gx PYPI_PASSWORD pypi-...
+
+# ---------------------------------------------- Claude Code / OTEL ------
+# Setting the endpoint is what turns telemetry on in config.fish.
+# set -gx OTEL_EXPORTER_OTLP_ENDPOINT https://otel.example.com:4317
+# set -gx OTEL_EXPORTER_OTLP_HEADERS "X-Some-Project=..."
+
+# ------------------------------------------------- `ch` ClickHouse envs --
+# One host per environment name; user/db/port are optional.
+#   ch <env>            connect
+#   ch setpw <env>      store the password in ~/.config/fish/.ch_passwords
+#
+# set -gx ch_envs       prod staging
+# set -gx ch_host_prod  abc123.us-east-1.aws.clickhouse.cloud
+# set -gx ch_user_prod  default
+# set -gx ch_db_prod    default
+# set -gx ch_port_prod  9440
+
+# ------------------------------------------------- `pg` Postgres envs ---
+#   pg <env>            connect read-only
+#   pg setpw <env>      store the password in ~/.config/fish/.pg_passwords
+#
+# set -gx pg_envs       prod
+# set -gx pg_host_prod  my-cluster.us-east-1.rds.amazonaws.com
+# set -gx pg_user_prod  readonly
+# set -gx pg_db_prod    mydb
+# set -gx pg_port_prod  5432

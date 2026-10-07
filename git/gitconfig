@@ -1,0 +1,16 @@
+# ~/.gitconfig
+[user]
+	email = vkorolik@gmail.com
+	name = Vadim Korolik
+	# public GPG key id, not a secret
+	signingkey = 986DAB6F7A471C34
+[push]
+	autoSetupRemote = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[help]
+	autocorrect = 1
+[core]
+	excludesfile = ~/.config/git/ignore

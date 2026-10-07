@@ -1,0 +1,9 @@
+# Anything matching these never belongs in a public dotfiles repo.
+fish/local.fish
+*.local.fish
+.ch_passwords
+.pg_passwords
+*.pem
+*.key
+.env
+.DS_Store
