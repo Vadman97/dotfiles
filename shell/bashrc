@@ -1,0 +1,3 @@
+# ~/.bashrc
+export PATH="$PATH:$HOME/.rvm/bin"
+[ -s "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

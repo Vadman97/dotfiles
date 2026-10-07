@@ -1,0 +1,13 @@
+# ~/.zshrc
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+
+# Docker Desktop CLI completions
+if [ -d "$HOME/.docker/completions" ]; then
+  fpath=("$HOME/.docker/completions" $fpath)
+fi
+autoload -Uz compinit
+compinit
